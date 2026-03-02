@@ -5,7 +5,9 @@ variable "labelPrefix" {
 }
 
 variable "region" {
-  default = "westus3"
+  default = "canadacentral"
+  type        = string
+  description = "Azure region for all resources. Use a region allowed by your subscription policy."
 }
 
 variable "admin_username" {
